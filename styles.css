@@ -1,0 +1,75 @@
+/*qiaoen part*/
+h2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:  1em;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family:  "Geologic", sans-serif;
+    font-size: 2.5em;
+}
+
+h2 > span
+{
+    position: relative;
+    display: inline-block;
+    color: blue;
+    height: 1.25em;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+h2 > span > span
+{
+    display: block;
+    animation: animateWordsH2 7s infinite ease;
+}
+@keyframes animateWordsH2
+{
+    0% {transform: translateY(0%);}
+    25% {transform: translateY(-100%);}
+    50% {transform: translateY(-200%);}
+    75% {transform: translateY(-300%);}
+    100% {transform: translateY(-400%);}
+}
+
+h3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:  1em;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family:  "Geologic", sans-serif;
+    font-size: 1.2em;  
+    line-height: 1.2em;
+}
+
+h3 > span
+{
+    position: relative;
+    display: inline-block;
+    color: blue;
+    height: 1.2em;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+h3 > span > span
+{
+    display: block;
+    height: 2.4em; 
+    line-height: 2.4em;
+    animation: animateWordsH3 10s infinite ease;
+}
+@keyframes animateWordsH3
+{
+    0% {transform: translateY(0%);}
+    50% {transform: translateY(-200%);}
+    100% {transform: translateY(-400%);}
+}
